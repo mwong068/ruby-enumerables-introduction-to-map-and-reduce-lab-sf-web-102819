@@ -36,14 +36,14 @@ end
 
 
 
-def reduce_to_total(array)
+def reduce_to_total(array, point = 0)
   total = 0 
   i = 0
   while i < array.length do
     total += array[i]
   i += 1 
  end
- return total
+ return total + point
 end
 
 def reduce_to_all_true(array)
